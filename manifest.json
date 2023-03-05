@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "H&M Clothes Price Extractor",
+    "version": "1.0",
+  
+    "description": "Extracts prices from the H&M website.",
+
+  
+    "host_permissions": [
+      "https://www2.hm.com/"
+    ],
+  
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www2.hm.com/en_us/women/new-arrivals/view-all.html"
+        ],
+        "js": [
+          "content.js"
+        ]
+      }
+    ]
+  }
+  
